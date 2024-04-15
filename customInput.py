@@ -7,6 +7,7 @@ from images import getConfidence
 import random
 
 VERBOSE = settings.VERBOSE
+
 #SAFE_SPACE = (settings.androidSize[0] + 100, int(settings.androidSize[1] / 2))
 #CLICK_DELAY = 0.5
 """
@@ -16,7 +17,7 @@ region=(0, 0, max_x, max_y)
 """
 
 # # TODO: uncomment this out in prod
-# #pyautogui.FAILSAFE=False
+pyautogui.FAILSAFE=False
 
 special_characters = {
     '~':'`',
